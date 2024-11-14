@@ -25,6 +25,9 @@ public class Video {
 
     private String author;
 
+    // Add slug field
+    private String slug;
+
     // Getters et Setters
     public Long getId() {
         return id;
@@ -105,4 +108,13 @@ public class Video {
     public void setAuthor(String author) {
         this.author = author;
     }
+
+    public String getSlug() {
+        return slug;
+    }
+
+    public void setSlug(String slug) {
+        this.slug = slug;
+    }
+
 }

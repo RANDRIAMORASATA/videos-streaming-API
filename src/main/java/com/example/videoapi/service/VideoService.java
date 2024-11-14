@@ -38,4 +38,9 @@ public class VideoService {
     public void deleteVideo(Long id) {
         videoRepository.deleteById(id);
     }
+
+    public Video findBySlug(String slug) {
+        Optional<Video> videoOpt = videoRepository.findBySlug(slug);
+        return videoOpt.orElse(null); // Return null if not found
+    }
 }

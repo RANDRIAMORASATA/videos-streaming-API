@@ -41,6 +41,6 @@ public class VideoService {
 
     public Video findBySlug(String slug) {
         Optional<Video> videoOpt = videoRepository.findBySlug(slug);
-        return videoOpt.orElse(null); // Return null if not found
+        return videoOpt.orElse(null);
     }
 }

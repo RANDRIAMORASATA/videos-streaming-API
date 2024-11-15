@@ -28,16 +28,16 @@ public class CategoryService {
 
     // Ajouter une nouvelle catégorie
     public Category addCategory(Category category) {
-        category.setCreatedAt(new Date()); // Ajoute la date de création
-        category.setUpdatedAt(new Date()); // Ajoute la date de mise à jour
+        category.setCreatedAt(new Date());
+        category.setUpdatedAt(new Date());
         return categoryRepository.save(category);
     }
 
     // Mettre à jour une catégorie existante
     public Category updateCategory(Long id, Category category) {
         if (categoryRepository.existsById(id)) {
-            category.setId(id); // S'assurer que l'ID est bien celui de l'élément existant
-            category.setUpdatedAt(new Date()); // Met à jour la date de modification
+            category.setId(id);
+            category.setUpdatedAt(new Date());
             return categoryRepository.save(category);
         }
         return null;

@@ -1,6 +1,6 @@
 package com.example.videoapi.model;
 
-import java.util.Date;  // Changer javax.persistence en jakarta.persistence
+import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

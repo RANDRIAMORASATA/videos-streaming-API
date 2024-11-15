@@ -1,6 +1,6 @@
 package com.example.videoapi.model;
 
-import jakarta.persistence.Entity;  // Utiliser jakarta.persistence pour Spring Boot 3.x
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -49,4 +49,3 @@ public class Notification {
         this.timeOut = timeOut;
     }
 }
-

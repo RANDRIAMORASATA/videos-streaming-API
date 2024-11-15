@@ -1,12 +1,13 @@
 package com.example.videoapi.service;
 
-import com.example.videoapi.model.Notification;
-import com.example.videoapi.repository.NotificationRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Optional;
+import com.example.videoapi.model.Notification;
+import com.example.videoapi.repository.NotificationRepository;
 
 @Service
 public class NotificationService {
@@ -31,7 +32,7 @@ public class NotificationService {
             notification.setId(id);
             return notificationRepository.save(notification);
         }
-        return null; // retourne null si la notification n'existe pas
+        return null;
     }
 
     public void deleteNotification(Long id) {
